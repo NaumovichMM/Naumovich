@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебные формы</title>
+</head>
+<body>
+    <Table width="700px">
+      <col width="50%">  
+        <tr>
+            <td>
+                <h3>Простая форма поиска с вариантами:</h3>
+                <form id="simple_f" name="simple_f_with_option" method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset><legend>Строка поиска</legend>
+                    <label><INPUT type="text" MAXLENGTH="10" id="text" name="zapros10">&nbsp;&nbsp;<input type="submit" value="Искать"></label><br>
+                    <label>  
+                        <input type="radio" id="radio1" name="na_sait" checked>на сайте</label>
+                        <label> 
+                        <input type="radio" id="radio2" name="v_google">в google
+                    </label><br>
+                    <i>Максимальная длина запроса не более 10 символов</i>
+                    </fieldset>
+                </form>
+            </td>
+            <td><h3>Простая форма поиска с вариантами:</h3>
+                <form id="simple_f2" name="simple_f_with_option2" method="post" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset><legend>Строка поиска</legend>
+                    <label><INPUT type="text" autofocus required id="text" name="zapros">&ast;&nbsp;<input type="submit" value="Искать"></label><br>
+                    <label>  
+                        <input type="radio" id="radio1" name="na_sait">на сайте</label>
+                        <label> 
+                        <input type="radio" id="radio2" name="v_google" checked>в google
+                    </label><br>
+                    <i>&ast; - обязательное поле</i><br>
+                    <i>Автофокус в поле поиска</i>
+                    </fieldset>
+                </form></td>
+        </tr>
+    </Table>
+</body>
+</html>
