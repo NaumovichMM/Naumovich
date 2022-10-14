@@ -8,9 +8,9 @@
     <h2>Заполните анкету</h2>
     <form action="http://fe.it-academy.by/TestForm.php" method="post" name="interview">
     <fieldset><legend>Личные данные</legend>
-        <input type="text" name="family"  placeholder="Фамилия" maxlength="25" required autofocus pattern="[А-Яа-я]"><br><!--когда есть placeholder не нужен value?-->
-        <input type="text" name="name"  placeholder="Имя" maxlength="20" required pattern="[А-Яа-я]"><br>
-        <input type="text" name="patronymic"  placeholder="Отчество" maxlength="24" required pattern="[А-Яа-я]"><br>
+        <input type="text" name="family"  placeholder="Фамилия" maxlength="25" required autofocus pattern="[А-Яа-яЁё]"><br><!--когда есть placeholder не нужен value?-->
+        <input type="text" name="name"  placeholder="Имя" maxlength="20" required pattern="[А-Яа-яЁё]"><br>
+        <input type="text" name="patronymic"  placeholder="Отчество" maxlength="24" required pattern="[А-Яа-яЁё]"><br>
         <fieldset><legend>Паспортные данные</legend>
         <input type="text" id="seria" name="seria" maxlength="2" pattern="[A-Z]{.2}" required>
         <label for="seria">Серия</label>
@@ -45,7 +45,7 @@
             <option value="n3">КЗ</option>
             </select>
             <label for="nation">Национальность</label><br>
-            <label for="adress">Адрес</label><br>
+            <label for="adres">Адрес</label><br>
         <textarea name="adres" id="adres" lang="ru"></textarea>
     </fieldset>
     <fieldset><legend>Интересы</legend>
@@ -76,7 +76,7 @@
                 <option name="Aist" value="8">Аист</option>
                 <option name="sorok" value="9">Курица</option>
           </optgroup>
-            </select>
+        </select>
             </fieldset>
     </fieldset>
     <fieldset><legend>Данные для входа и восстонавления пароля</legend>
@@ -95,7 +95,9 @@
 <input type="range" min="1" max="10"></fieldset>
 <fieldset><legend>Кнопки управления</legend>
 <input type="submit" name="ok" value="Отправить">
-<input type="reset" name="done" value="Сбросить">
+<input type="reset" name="done" value="Сбросить"><br>
+<input type="image" src="mailbox.jpg" alt="picture_mailbox"> <!--можно через button-->
+
 </fieldset>
 </form>
     
