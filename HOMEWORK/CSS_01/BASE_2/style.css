@@ -1,0 +1,32 @@
+                body {
+            align-content: center;
+            border: 1px solid darkblue;
+            min-height: 50%;
+            width: 50%;
+            margin: 3%;
+            padding: 1%;
+        }
+        h1 {
+            text-align: right;
+            font: bold 14pt Times New Roman;
+        }
+        address {
+            text-align: right;
+            font: italic 14pt Times New Roman;
+        }
+        .shapka {
+            text-align: right;
+            font: normal 14pt Times New Roman;
+        }
+        .man {
+            font: bold 14pt BadScript;
+            text-indent: 5mm;
+            text-decoration:underline
+        }
+        p {
+            font: normal 14pt BadScript;
+        }
+        .off {
+            font: normal 14pt Times New Roman;
+        }
+    
