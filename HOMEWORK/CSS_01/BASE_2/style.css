@@ -1,4 +1,5 @@
                 body {
+                    font-family: BadScript;
             align-content: center;
             border: 1px solid darkblue;
             min-height: 50%;
@@ -8,27 +9,27 @@
         }
         h1 {
             text-align: right;
-            font: bold 14pt Times New Roman;
+            font: bold 13pt Times New Roman;
         }
         address {
             text-align: right;
-            font: italic 14pt Times New Roman;
+            font: italic 13pt Times New Roman;
         }
         .shapka {
             text-align: right;
-            font: normal 14pt Times New Roman;
+            font: normal 13pt Times New Roman;
         }
         .man {
-            font: bold 14pt BadScript;
+            font: bold 13pt BadScript;
             text-indent: 5mm;
             text-decoration:underline
         }
         p {
-            font: normal 14pt BadScript;
+            font: normal 13pt BadScript;
             text-indent: 5mm;
         }
         .off {
-            font: normal 14pt Times New Roman;
+            font: normal 13pt Times New Roman;
             text-indent: none;
         }
     
