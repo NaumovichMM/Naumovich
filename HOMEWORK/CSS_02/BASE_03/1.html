@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с разделами</title>
+    <style>
+        body {
+            background: #dbdbdb;
+            border-top: 1px white;
+        }
+        .navigation {
+            width: 15em;
+            float: left;
+            background: #d5d5d5;
+            padding: 3px;
+            margin-right: 5px;
+            border: solid white;
+        }
+        .content {
+            width: auto;
+            margin-bottom: .2em;
+            background: #aaaaaa;
+            padding: 3px;
+            border: solid white;
+           
+        }
+        .footer {
+            background: #555151;
+            clear: both;
+            border: solid white;
+        }
+        img {
+        position: relative;
+          float: right;
+                            
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <strong>Блок навигации</strong>
+        <ul>
+            <li>Ширина 15em</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации заполните контентом достаточным, чтобы по высоте он начал захватывать вторую статью, как показано в данном примере.
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <p><strong>Статья 1</strong><br>
+        Размер блока: <br>
+        Занимает всю доступную ширину <br>
+        Должен присутствовать цвет фона <br>
+        Во всех "Статьях" сделайте отступ снизу от соседей равным .2em при помощи свойства margin-bottom.
+        </p>
+    </div>
+    <div class="content">
+        <img src="m.png" alt="почта" width="80px">
+        <p><strong>Статья 1</strong><br>
+        Размер блока: <br>
+        Занимает всю доступную ширину <br>
+        Должен присутствовать цвет фона <br>
+        Во всех "Статьях" сделайте отступ снизу от соседей равным .2em при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+        <br>
+        </p>
+    </div>
+    </body>
+    <footer>
+        <div class="footer">
+            <p>Нижний блок. Подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом</p>
+        </div>
+    </footer>
+</html>
