@@ -5,36 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница с разделами</title>
-    <style>
-        body {
-            background: #dbdbdb;
-            border-top: 1px white;
-        }
+    <style>  
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: auto;
+               
+    }                      
         .navigation {
-            width: 15em;
-            float: left;
+            flex-grow: 0;
+            width: 30%;
             background: #d5d5d5;
             padding: 3px;
             margin-right: 5px;
             border: solid white;
         }
         .content {
-            width: auto;
+            flex-grow: 1;
+                        width: auto;
             margin-bottom: .2em;
             background: #aaaaaa;
             padding: 3px;
-            border: solid white;
-           
-        }
-        .footer {
-            background: #555151;
-            clear: both;
             border: solid white;
         }
         img {
         position: relative;
           float: right;
-                            
+        }
+        footer {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            background: #555151;
+            border: solid white;
         }
     </style>
 </head>
