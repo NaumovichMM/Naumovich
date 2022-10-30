@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+        border-right: 10px solid white;
+        }
+        td {
+            border-bottom: 2px dotted grey;
+            border-right: 2px dotted grey;
+        }
+        th {
+            background: grey;
+        }
+        tr:nth-child(2n+1) { 
+        background-color: rgb(208, 204, 204) 
+        
+    } 
+    
+    tr:hover {
+        background: pink;
+    }
+    td:nth-child(6) {
+        border-right: 0;
+    }
+    td:nth-child(1) {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <caption align="bottom">ДАННЫЕ О СОТРУДНИКАХ</caption>
+        <tr>
+            <th>ФИО</th><th>пол</th><th>должность</th><th>дата рож.</th><th>Данные 01</th><th>Данные 02</th>
+        </tr>
+        
+        <tr>
+            <td>Иванов Иван Иванович</td><td>м</td><td>начальник</td><td>01.01.1960</td><td>123000</td><td>23000</td>
+        </tr>
+        <tr>
+            <td>Петрова Полина Петровна</td><td>ж</td><td>зам.начальника</td><td>01.01.1977</td><td>111000</td><td>1100</td>
+        </tr>
+        <tr>
+            <td>Сидоров Сергей Сергеевич</td><td>м</td><td>зам.зама</td><td>01.02.1987</td><td>89000</td><td>890</td>
+        </tr>
+        <tr>
+            <td>Иванова Анна Ивановна</td><td>ж</td><td>бухгалтер</td><td>01.03.1988</td><td>99000</td><td>987</td>
+        </tr>
+        <tr>
+            <td>Жуков Александр Ильич</td><td>м</td><td>зам.бухгалтера</td><td>01.04.1989</td><td>11000</td><td>23400</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

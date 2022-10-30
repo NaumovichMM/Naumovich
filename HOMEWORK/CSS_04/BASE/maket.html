@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет</title>
+    <style>
+        body {
+            width: 700px;
+        }
+
+
+    div {
+        text-indent: 10px;
+        border:1px outset rgba(161, 157, 157, 0.442);
+        border-radius:0 1em/1em; 
+        padding-left: 15px;
+    }
+        
+    li::before {content: url(list.jpg);}
+    .word span {
+    visibility: hidden;
+    position: absolute;
+    }
+    .word:hover span {
+    visibility: visible;
+    }
+    .pdf span {
+    visibility: hidden;
+    position: absolute;
+    }
+    .pdf:hover span {
+    visibility: visible;
+    }
+    .zip span {
+    visibility: hidden;
+    position: absolute;
+    }
+    .zip:hover span {
+    visibility: visible;
+    }
+    </style>  
+</head>
+<body>
+    <h1>Форматы файлов</h1>
+    <div class="doc">.DOC или .doc (от англ. <img src="st.png" alt=""><a href="#">document</a>) - расширение имени файла, используемое для 
+        файлов,<br> представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для <br> обозначения простых текстовых файлов
+        без форматирования, однако позже стало <br> использоваться для двоичных форматов с разметкой <br>
+    <a href="#"> Документ MS Word</a> <img src="w.jpg" alt="">
+    </div>
+    <div class="pdf">
+        Portable Document Format (<img src="st.png" alt=""> <a href="#"> PDF</a>) - межплатформенный формат электронных документов,<br>
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка <br> Postscript. <br>
+        <a href="#" style="background-image: url(pdf.png); background-repeat: no-repeat;background-position: right;
+        padding: 18px;">Документ PDF</a>
+    </div>
+    <div class="zip">
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате<br> обычно имеет расширение
+        <img src="st.png" alt=""><a href="">.zip</a> и хранит в сжатом или несжатом виде один или несколько<br> файлов, которое можно из него
+         извлечь путем распаковки с помощью специальной<br> программы. <br>
+         <a href="#" style="background-image: url(zip.gif); background-repeat: no-repeat;background-position: right;
+        padding: 18px;">Архив</a>
+    </div>
+    <h2>Это список файлов</h2>
+<ul>
+    <li>
+        <a class="word" href="#">Документ MS Word
+            <span>
+                <img src="w.jpg">
+            </span>
+        </a>
+    </li>
+    <li>
+        <a class="pdf" href="#">Документ PDF
+        <span>
+            <img src="pdf.png">
+        </span>
+        </a>
+    </li>
+    <li>
+        <a class="zip" href="#">Архив
+            <span>
+                <img src="zip.gif">
+            </span>
+            </a>
+    </li>
+</ul>
+
+</body>
+</html>
