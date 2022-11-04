@@ -6,31 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Меню</title>
     <style>
-        .menu {
-        display: flex;
-        flex-wrap: row wrap;
-        }
-button {
-    width: 150px;
+        
+.menu, .menu_sreda {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #818181;
+  padding-left: 5px;
+    }
+  
+.menu > li {
+  display: inline-block;
+  background-color: #d3d3d3;
+  width: 150px;
     height: 50px;
-    margin: 0;
-    padding: 0;
     border-radius: 6px;
-    font-size: 16px;
-    color: #818181;
-    background: #d3d3d3;
+    border: solid rgb(39, 38, 38) 2px;
+    line-height: 50px;
+    margin-right: -5px;
+    position: relative;
+
+  }
+  .menu_sreda > li {
+    background-color: #d3d3d3;
+  width: 150px;
+    height: 50px;
+    border-radius: 6px;
+    border: solid rgb(39, 38, 38) 2px;
+    line-height: 50px;
+    margin-right: -5px;
+  }
+.menu_sreda {
+display: none;
+position: absolute;
+top: 52px;
+right: 3px;      
+}
+
+.sreda:hover .menu_sreda  {
+display: block;
 
 }
-    </style>
+a:hover {
+  background-color: #818181;
+color: #d3d3d3; 
+}
+@media all and (max-device-width: 929px) {
+  a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #818181;
+  padding-left: 5px;
+    }
+  
+.menu > li {
+  display: block;
+  background-color: #d3d3d3;
+  width: 350px;
+    height: 50px;
+    border-radius: 6px;
+    border: solid rgb(39, 38, 38) 2px;
+    line-height: 50px;
+    margin-right: -5px;
+    position: relative;
+
+  }
+  .menu_sreda {
+display: none;
+position: absolute;
+right: -151px; 
+top: -2px;     
+}
+
+.sreda:hover .menu_sreda  {
+display: block;
+
+}
+a:hover {
+  background-color: #818181;
+color: #d3d3d3; 
+}
+}
+</style>
 </head>
 <body>
-    <div class="menu">
-    <button>Понедельник</button>
-    <button>Вторник</button>
-    <button>Среда</button>
-    <button>Четверг</button>
-    <button>Пятница</button>
-    <button>Суббота</button>
-</div>
+    <nav>
+       <ul class="menu" >
+            <li><a href="#">Понедельник</a></li>
+            <li><a href="#">Вторник</a></li>
+              <li class="sreda"><a href="#">Среда</a>
+                <ul class="menu_sreda">
+                  <li><a href="#">Завтрак</a></li>
+                  <li><a href="#">Обед</a></li>
+                  <li><a href="#">Ужин</a></li>
+               </ul>
+              </li>
+            <li><a href="#">Четверг</a></li>
+            <li><a href="#">Пятница</a></li>
+            <li><a href="#">Суббота</a></li>
+      </ul>
+    </nav>
 </body>
 </html>
