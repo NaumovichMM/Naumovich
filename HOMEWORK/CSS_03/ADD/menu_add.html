@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Меню</title>
     <style>
-        /*transition только в горизонтальном меню получилось с visibillity в вертикальном - надо использовать display block с ним не выходит*/
+        
 .menu, .menu_sreda {
   list-style: none;
   margin: 0;
@@ -44,17 +44,14 @@ a {
     margin-right: -5px;
   }
 .menu_sreda {
-visibility: hidden;
-opacity: 0;
-transition: visibility 0s, opacity 1.5s linear;
+display: none;
 position: absolute;
 top: 52px;
 right: 3px;      
 }
 
 .sreda:hover .menu_sreda  {
-  visibility: visible;
-  opacity: 1;
+display: block;
 
 }
 a:hover {
@@ -88,11 +85,14 @@ color: #d3d3d3;
 display: none;
 position: absolute;
 right: -151px; 
-top: -2px;     
+top: -2px; 
+transition: all 5s ease;
+   
 }
 
 .sreda:hover .menu_sreda  {
 display: block;
+
 
 }
 a:hover {
